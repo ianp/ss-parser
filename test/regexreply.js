@@ -1,10 +1,9 @@
 // Lets actually test this thing
 var mocha = require("mocha");
 var should = require("should");
-var debug = require("debug")("suite");
+const debug = require('debug-levels')('ss-parser:test-suite')
 var rxreply = require("../lib/regexreply");
 var async = require("async");
-var _ = require("lodash");
 
 var test = [
   {test: "hello", input: "hello"},
@@ -78,7 +77,7 @@ describe("Regex Reply Parse", function() {
   var itor = function(item, next) {
     it("Test '" + item.test + "' '" + item.input + "' should be " + (item.assert === false ?  "false" : "true"), function(done){
       rxreply.parse(item.input, {}, function(regexp) {
-        debug(regexp);
+        debug.info(regexp)
         var pattern = new RegExp("^" + regexp + "$", "i");
 
         if (item.assert === false) {

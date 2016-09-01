@@ -12,23 +12,24 @@
   "license": "MIT",
   "homepage": "https://github.com/silentrob/ss-parser",
   "dependencies": {
-    "wordnet-db": "^3.1.2",
     "async": "^1.5.2",
     "async-replace": "^1.0.1",
     "checksum": "^0.1.1",
     "debug": "^2.2.0",
+    "debug-levels": "^0.2.0",
     "deepmerge": "^0.2.10",
     "eslint": "^2.8.0",
     "lodash": "^4.11.1",
     "natural": "^0.4.0",
     "node-normalizer": "^0.1.4",
     "sfacts": "^0.2.0",
-    "wordnet": "^0.1.2"
+    "wordnet": "^0.1.2",
+    "wordnet-db": "^3.1.2"
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
-    "mocha": "^2.4.5",
-    "should": "^8.3.1"
+    "mocha": "^3.0.2",
+    "should": "^11.1.0"
   }
 }

@@ -2,3 +2,7 @@ node_modules/*
 systemDB
 *.log
 coverage/*
+
+# IDEA/WebStorm Project Files
+.idea
+*.iml
